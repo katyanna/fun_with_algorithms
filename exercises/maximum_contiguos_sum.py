@@ -12,8 +12,8 @@ def max_cont_sum(arr, size):
     latest_max = arr[0]
     final_max = 0
 
-    for num in range(0, size):
-        final_max = final_max + arr[num]
+    for num in range(size):
+        final_max += arr[num]
         if (latest_max < final_max):
             latest_max = final_max
 
